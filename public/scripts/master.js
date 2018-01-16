@@ -1,0 +1,1 @@
+var nextsofts={save:function(a,b,c){var d="";return $.ajax({url:a,type:b,data:c,headers:{"X-CSRF-TOKEN":$("meta[name=_token]").attr("content")},dataType:"json",async:!1,error:function(a){alert("error")},success:function(a){d=a}}),d}};
